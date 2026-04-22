@@ -1,0 +1,14 @@
+controller:
+  port: 8080
+  hosts:
+    count: 1
+    subnet: "127.0.0.1/32" # Use localhost for rIP
+  vip:
+    pool_cidr: "10.0.1.0/24"
+    mutation_interval: 5
+
+gateway:
+  listen_port: 8081
+  controller_url: "http://127.0.0.1:8080"
+
+log_level: "DEBUG"

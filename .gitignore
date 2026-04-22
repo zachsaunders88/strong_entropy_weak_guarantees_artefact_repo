@@ -1,0 +1,10 @@
+# Artifact repo ignores
+__pycache__/
+*.pyc
+*.log
+*.db
+*.pcap
+*.bin
+.pytest_cache/
+.venv/
+.DS_Store

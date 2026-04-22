@@ -1,0 +1,127 @@
+{
+  "experiment": "s2_network_collision",
+  "pool_cidr": "10.0.1.0/28",
+  "configurations": {
+    "k5": {
+      "num_replicas": 5,
+      "conditions": {
+        "prng": {
+          "label": "PRNG k=5",
+          "num_replicas": 5,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 728,
+          "collision_rate": 0.728,
+          "ci_95_low": 0.699586,
+          "ci_95_high": 0.754669,
+          "theoretical_birthday_bound": 0.743941,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 7.9384,
+          "chi2_df": 8,
+          "chi2_p_value": 0.43951,
+          "mean_collisions_per_step": 0.854
+        },
+        "csprng": {
+          "label": "CSPRNG k=5",
+          "num_replicas": 5,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 759,
+          "collision_rate": 0.759,
+          "ci_95_low": 0.731533,
+          "ci_95_high": 0.784485,
+          "theoretical_birthday_bound": 0.743941,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 9.832,
+          "chi2_df": 8,
+          "chi2_p_value": 0.277016,
+          "mean_collisions_per_step": 0.914
+        },
+        "dead": {
+          "label": "DEAD k=5",
+          "num_replicas": 5,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 748,
+          "collision_rate": 0.748,
+          "ci_95_low": 0.720176,
+          "ci_95_high": 0.773926,
+          "theoretical_birthday_bound": 0.743941,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 5.6452,
+          "chi2_df": 8,
+          "chi2_p_value": 0.686905,
+          "mean_collisions_per_step": 0.878
+        }
+      }
+    },
+    "k3": {
+      "num_replicas": 3,
+      "conditions": {
+        "prng_k3": {
+          "label": "PRNG k=3",
+          "num_replicas": 3,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 330,
+          "collision_rate": 0.33,
+          "ci_95_low": 0.301555,
+          "ci_95_high": 0.359746,
+          "theoretical_birthday_bound": 0.308642,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 9.582,
+          "chi2_df": 8,
+          "chi2_p_value": 0.295597,
+          "mean_collisions_per_step": 0.33
+        },
+        "csprng_k3": {
+          "label": "CSPRNG k=3",
+          "num_replicas": 3,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 303,
+          "collision_rate": 0.303,
+          "ci_95_low": 0.275315,
+          "ci_95_high": 0.332193,
+          "theoretical_birthday_bound": 0.308642,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 5.064,
+          "chi2_df": 8,
+          "chi2_p_value": 0.750714,
+          "mean_collisions_per_step": 0.303
+        },
+        "dead_k3": {
+          "label": "DEAD k=3",
+          "num_replicas": 3,
+          "effective_pool_size": 9,
+          "num_steps": 1000,
+          "steps_with_collision": 326,
+          "collision_rate": 0.326,
+          "ci_95_low": 0.297661,
+          "ci_95_high": 0.355671,
+          "theoretical_birthday_bound": 0.308642,
+          "within_ci": true,
+          "unique_addresses_used": 9,
+          "chi_squared_uniformity": 11.088,
+          "chi2_df": 8,
+          "chi2_p_value": 0.196763,
+          "mean_collisions_per_step": 0.326
+        }
+      }
+    }
+  },
+  "num_steps": 1000,
+  "timestamp": "20260413T051654Z",
+  "environment": "standalone_kali",
+  "reproducibility": {
+    "python_version": "3.13.12 (main, Feb  4 2026, 15:06:39) [GCC 15.2.0]",
+    "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "scipy_version": "1.16.3"
+  }
+}

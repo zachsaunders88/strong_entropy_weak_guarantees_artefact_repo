@@ -1,0 +1,8 @@
+pydantic
+pyyaml
+pytest
+requests
+flask
+fastapi
+uvicorn
+cryptography

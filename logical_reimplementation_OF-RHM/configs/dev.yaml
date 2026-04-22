@@ -1,0 +1,17 @@
+controller:
+  port: 8080
+  hosts:
+    count: 10
+    subnet: "10.0.0.0/24"
+  vip:
+    pool_cidr: "10.0.1.0/24"
+    mutation_interval: 30
+    entropy_source: "std_random"
+    dead_server_url: "http://127.0.0.1:8000"
+    coordination_scope: "pool-dev-1"
+
+gateway:
+  listen_port: 8081
+  controller_url: "http://localhost:8080"
+
+log_level: "DEBUG"

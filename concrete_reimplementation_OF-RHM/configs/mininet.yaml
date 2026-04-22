@@ -1,0 +1,23 @@
+controller:
+  host: "0.0.0.0"
+  port: 8080
+  hosts:
+    count: 3
+    subnet: "10.0.0"
+  vip_pool:
+    cidr: "10.0.1.0/28"
+  entropy_provider: "csprng"
+  mutation_interval_s: 2.0
+  reuse_timeout_s: 60
+  admin_allowlist: []
+
+dead:
+  host: "127.0.0.1"
+  port: 8000
+
+network:
+  external_subnet: "192.168.1.0/24"
+  internal_subnet: "10.0.0.0/24"
+  gateway_external_ip: "192.168.1.1"
+  gateway_internal_ip: "10.0.0.254"
+  client_ip: "192.168.1.10"

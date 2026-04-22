@@ -1,0 +1,55 @@
+{
+  "experiment": "s2_network_collision",
+  "pool_cidr": "10.0.1.0/28",
+  "num_replicas": 5,
+  "num_steps": 500,
+  "conditions": {
+    "prng": {
+      "label": "Condition 1: PRNG (StandardRandomProvider)",
+      "num_replicas": 5,
+      "effective_pool_size": 9,
+      "num_steps": 500,
+      "steps_with_collision": 385,
+      "collision_rate": 0.77,
+      "ci_95_low": 0.731137,
+      "ci_95_high": 0.804746,
+      "theoretical_birthday_bound": 0.743941,
+      "within_ci": true,
+      "unique_addresses_used": 9,
+      "chi_squared_uniformity": 3.0224,
+      "mean_collisions_per_step": 0.916
+    },
+    "csprng": {
+      "label": "Condition 2: CSPRNG (SecretsProvider)",
+      "num_replicas": 5,
+      "effective_pool_size": 9,
+      "num_steps": 500,
+      "steps_with_collision": 349,
+      "collision_rate": 0.698,
+      "ci_95_low": 0.656372,
+      "ci_95_high": 0.736609,
+      "theoretical_birthday_bound": 0.743941,
+      "within_ci": false,
+      "unique_addresses_used": 9,
+      "chi_squared_uniformity": 6.1328,
+      "mean_collisions_per_step": 0.832
+    },
+    "dead": {
+      "label": "Condition 3: DEAD (entropy only, no coordination)",
+      "num_replicas": 5,
+      "effective_pool_size": 9,
+      "num_steps": 500,
+      "steps_with_collision": 377,
+      "collision_rate": 0.754,
+      "ci_95_low": 0.714407,
+      "ci_95_high": 0.78972,
+      "theoretical_birthday_bound": 0.743941,
+      "within_ci": true,
+      "unique_addresses_used": 9,
+      "chi_squared_uniformity": 11.1512,
+      "mean_collisions_per_step": 0.888
+    }
+  },
+  "timestamp": "20260413T040353Z",
+  "environment": "standalone_kali"
+}

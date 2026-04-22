@@ -1,0 +1,1178 @@
+{
+  "experiment": "s4c_clone_schedule_timing",
+  "provider": "csprng",
+  "mitigation_applied": false,
+  "mutation_interval_s": 2.0,
+  "num_trials": 50,
+  "mean_delta_ms": 0.0,
+  "std_delta_ms": 0.0,
+  "min_delta_ms": 0.0,
+  "max_delta_ms": 0.0,
+  "median_delta_ms": 0.0,
+  "p25_delta_ms": 0.0,
+  "p75_delta_ms": 0.0,
+  "p90_delta_ms": 0.0,
+  "synchronised_count": 50,
+  "synchronised_fraction": 1.0,
+  "trials": [
+    {
+      "trial": 0,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057522.9213045,
+        "first_mutation_ts": 1776057524.922721,
+        "delta_from_snapshot_ms": 2001.4164447784424,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.11"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057522.9213045,
+        "first_mutation_ts": 1776057524.92825,
+        "delta_from_snapshot_ms": 2006.9456100463867,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.11"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 1,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057524.9805934,
+        "first_mutation_ts": 1776057526.9820278,
+        "delta_from_snapshot_ms": 2001.434326171875,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.4"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057524.9805934,
+        "first_mutation_ts": 1776057526.9876223,
+        "delta_from_snapshot_ms": 2007.0288181304932,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.4"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 2,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057527.0401318,
+        "first_mutation_ts": 1776057529.0409696,
+        "delta_from_snapshot_ms": 2000.837802886963,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057527.0401318,
+        "first_mutation_ts": 1776057529.0466313,
+        "delta_from_snapshot_ms": 2006.4995288848877,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 3,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057529.0993915,
+        "first_mutation_ts": 1776057531.1008818,
+        "delta_from_snapshot_ms": 2001.4903545379639,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057529.0993915,
+        "first_mutation_ts": 1776057531.1061125,
+        "delta_from_snapshot_ms": 2006.721019744873,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 4,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057531.158188,
+        "first_mutation_ts": 1776057533.1584716,
+        "delta_from_snapshot_ms": 2000.2834796905518,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057531.158188,
+        "first_mutation_ts": 1776057533.1640425,
+        "delta_from_snapshot_ms": 2005.8543682098389,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 5,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057533.2165573,
+        "first_mutation_ts": 1776057535.217478,
+        "delta_from_snapshot_ms": 2000.9207725524902,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.8"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057533.2165573,
+        "first_mutation_ts": 1776057535.2229848,
+        "delta_from_snapshot_ms": 2006.427526473999,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.8"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 6,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057535.2756076,
+        "first_mutation_ts": 1776057537.2768676,
+        "delta_from_snapshot_ms": 2001.2600421905518,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.7"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057535.2756076,
+        "first_mutation_ts": 1776057537.282114,
+        "delta_from_snapshot_ms": 2006.5064430236816,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.7"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 7,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057537.3351002,
+        "first_mutation_ts": 1776057539.3351088,
+        "delta_from_snapshot_ms": 2000.0085830688477,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.3"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057537.3351002,
+        "first_mutation_ts": 1776057539.3407476,
+        "delta_from_snapshot_ms": 2005.6474208831787,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.3"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 8,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057539.3933854,
+        "first_mutation_ts": 1776057541.3942225,
+        "delta_from_snapshot_ms": 2000.8370876312256,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.4"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057539.3933854,
+        "first_mutation_ts": 1776057541.3999717,
+        "delta_from_snapshot_ms": 2006.5863132476807,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.4"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 9,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057541.4524882,
+        "first_mutation_ts": 1776057543.45336,
+        "delta_from_snapshot_ms": 2000.8718967437744,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.13"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057541.4524882,
+        "first_mutation_ts": 1776057543.4590003,
+        "delta_from_snapshot_ms": 2006.51216506958,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.12",
+        "old_vip": "10.0.1.13"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 10,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057543.511704,
+        "first_mutation_ts": 1776057545.51262,
+        "delta_from_snapshot_ms": 2000.9160041809082,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.2"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057543.511704,
+        "first_mutation_ts": 1776057545.5182078,
+        "delta_from_snapshot_ms": 2006.5038204193115,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.2"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 11,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057545.5709615,
+        "first_mutation_ts": 1776057547.5720098,
+        "delta_from_snapshot_ms": 2001.0483264923096,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.6"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057545.5709615,
+        "first_mutation_ts": 1776057547.5775907,
+        "delta_from_snapshot_ms": 2006.629228591919,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.6"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 12,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057547.6298194,
+        "first_mutation_ts": 1776057549.6302443,
+        "delta_from_snapshot_ms": 2000.424861907959,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.9"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057547.6298194,
+        "first_mutation_ts": 1776057549.6358054,
+        "delta_from_snapshot_ms": 2005.985975265503,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.9"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 13,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057549.688497,
+        "first_mutation_ts": 1776057551.6894295,
+        "delta_from_snapshot_ms": 2000.9324550628662,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.1"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057549.688497,
+        "first_mutation_ts": 1776057551.69502,
+        "delta_from_snapshot_ms": 2006.5228939056396,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.1"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 14,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057551.7476294,
+        "first_mutation_ts": 1776057553.7478828,
+        "delta_from_snapshot_ms": 2000.253438949585,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.3"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057551.7476294,
+        "first_mutation_ts": 1776057553.753509,
+        "delta_from_snapshot_ms": 2005.8796405792236,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.12",
+        "old_vip": "10.0.1.3"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 15,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057553.8060956,
+        "first_mutation_ts": 1776057555.8075407,
+        "delta_from_snapshot_ms": 2001.4450550079346,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057553.8060956,
+        "first_mutation_ts": 1776057555.8131192,
+        "delta_from_snapshot_ms": 2007.023572921753,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 16,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057555.8656378,
+        "first_mutation_ts": 1776057557.86608,
+        "delta_from_snapshot_ms": 2000.4422664642334,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.9"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057555.8656378,
+        "first_mutation_ts": 1776057557.8716283,
+        "delta_from_snapshot_ms": 2005.9905052185059,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.9"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 17,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057557.9242508,
+        "first_mutation_ts": 1776057559.9249814,
+        "delta_from_snapshot_ms": 2000.7305145263672,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057557.9242508,
+        "first_mutation_ts": 1776057559.9305394,
+        "delta_from_snapshot_ms": 2006.2885284423828,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 18,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057559.9832025,
+        "first_mutation_ts": 1776057561.9833012,
+        "delta_from_snapshot_ms": 2000.098705291748,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.5",
+        "old_vip": "10.0.1.2"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057559.9832025,
+        "first_mutation_ts": 1776057561.9890182,
+        "delta_from_snapshot_ms": 2005.8157444000244,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.2"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 19,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057562.0413678,
+        "first_mutation_ts": 1776057564.0416672,
+        "delta_from_snapshot_ms": 2000.2994537353516,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.4"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057562.0413678,
+        "first_mutation_ts": 1776057564.0473177,
+        "delta_from_snapshot_ms": 2005.9499740600586,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.4"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 20,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057564.0998192,
+        "first_mutation_ts": 1776057566.1008527,
+        "delta_from_snapshot_ms": 2001.0335445404053,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.8"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057564.0998192,
+        "first_mutation_ts": 1776057566.1064334,
+        "delta_from_snapshot_ms": 2006.6142082214355,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.8"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 21,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057566.1585977,
+        "first_mutation_ts": 1776057568.1587238,
+        "delta_from_snapshot_ms": 2000.1261234283447,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.11"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057566.1585977,
+        "first_mutation_ts": 1776057568.1643987,
+        "delta_from_snapshot_ms": 2005.8009624481201,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.11"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 22,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057568.2169685,
+        "first_mutation_ts": 1776057570.217449,
+        "delta_from_snapshot_ms": 2000.4804134368896,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.9"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057568.2169685,
+        "first_mutation_ts": 1776057570.2231085,
+        "delta_from_snapshot_ms": 2006.1399936676025,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.9"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 23,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057570.2762601,
+        "first_mutation_ts": 1776057572.2765179,
+        "delta_from_snapshot_ms": 2000.2577304840088,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057570.2762601,
+        "first_mutation_ts": 1776057572.2820032,
+        "delta_from_snapshot_ms": 2005.7430267333984,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 24,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057572.3339696,
+        "first_mutation_ts": 1776057574.33452,
+        "delta_from_snapshot_ms": 2000.5505084991455,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057572.3339696,
+        "first_mutation_ts": 1776057574.3401365,
+        "delta_from_snapshot_ms": 2006.166934967041,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 25,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057574.3929324,
+        "first_mutation_ts": 1776057576.3939853,
+        "delta_from_snapshot_ms": 2001.0528564453125,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057574.3929324,
+        "first_mutation_ts": 1776057576.3996994,
+        "delta_from_snapshot_ms": 2006.7670345306396,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 26,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057576.45194,
+        "first_mutation_ts": 1776057578.452296,
+        "delta_from_snapshot_ms": 2000.3559589385986,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.14"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057576.45194,
+        "first_mutation_ts": 1776057578.45796,
+        "delta_from_snapshot_ms": 2006.0198307037354,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.14"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 27,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057578.5108514,
+        "first_mutation_ts": 1776057580.5116224,
+        "delta_from_snapshot_ms": 2000.7710456848145,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.14"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057578.5108514,
+        "first_mutation_ts": 1776057580.5171719,
+        "delta_from_snapshot_ms": 2006.3204765319824,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.14"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 28,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057580.5695996,
+        "first_mutation_ts": 1776057582.5706024,
+        "delta_from_snapshot_ms": 2001.0027885437012,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.12",
+        "old_vip": "10.0.1.14"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057580.5695996,
+        "first_mutation_ts": 1776057582.576167,
+        "delta_from_snapshot_ms": 2006.5674781799316,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.14"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 29,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057582.628716,
+        "first_mutation_ts": 1776057584.629697,
+        "delta_from_snapshot_ms": 2000.981092453003,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.4"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057582.628716,
+        "first_mutation_ts": 1776057584.6352513,
+        "delta_from_snapshot_ms": 2006.535291671753,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.4"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 30,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057584.6878734,
+        "first_mutation_ts": 1776057586.6882424,
+        "delta_from_snapshot_ms": 2000.3690719604492,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.5",
+        "old_vip": "10.0.1.1"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057584.6878734,
+        "first_mutation_ts": 1776057586.693838,
+        "delta_from_snapshot_ms": 2005.9645175933838,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.1"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 31,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057586.746498,
+        "first_mutation_ts": 1776057588.7466226,
+        "delta_from_snapshot_ms": 2000.124454498291,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.14",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057586.746498,
+        "first_mutation_ts": 1776057588.7522042,
+        "delta_from_snapshot_ms": 2005.7060718536377,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 32,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057588.8042622,
+        "first_mutation_ts": 1776057590.8053603,
+        "delta_from_snapshot_ms": 2001.0981559753418,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057588.8042622,
+        "first_mutation_ts": 1776057590.8108919,
+        "delta_from_snapshot_ms": 2006.6297054290771,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 33,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057590.8632388,
+        "first_mutation_ts": 1776057592.8646612,
+        "delta_from_snapshot_ms": 2001.42240524292,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057590.8632388,
+        "first_mutation_ts": 1776057592.870256,
+        "delta_from_snapshot_ms": 2007.0171356201172,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 34,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057592.923018,
+        "first_mutation_ts": 1776057594.9231503,
+        "delta_from_snapshot_ms": 2000.1323223114014,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.1"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057592.923018,
+        "first_mutation_ts": 1776057594.928808,
+        "delta_from_snapshot_ms": 2005.7899951934814,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.1"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 35,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057594.98143,
+        "first_mutation_ts": 1776057596.982009,
+        "delta_from_snapshot_ms": 2000.5788803100586,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.7"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057594.98143,
+        "first_mutation_ts": 1776057596.987614,
+        "delta_from_snapshot_ms": 2006.1838626861572,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.5",
+        "old_vip": "10.0.1.7"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 36,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057597.0396008,
+        "first_mutation_ts": 1776057599.0401795,
+        "delta_from_snapshot_ms": 2000.5786418914795,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.1"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057597.0396008,
+        "first_mutation_ts": 1776057599.0458436,
+        "delta_from_snapshot_ms": 2006.2427520751953,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.5",
+        "old_vip": "10.0.1.1"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 37,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057599.098043,
+        "first_mutation_ts": 1776057601.0995262,
+        "delta_from_snapshot_ms": 2001.4832019805908,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.10"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057599.098043,
+        "first_mutation_ts": 1776057601.1051776,
+        "delta_from_snapshot_ms": 2007.1346759796143,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.10"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 38,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057601.1579854,
+        "first_mutation_ts": 1776057603.1580532,
+        "delta_from_snapshot_ms": 2000.0677108764648,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.1"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057601.1579854,
+        "first_mutation_ts": 1776057603.163423,
+        "delta_from_snapshot_ms": 2005.4376125335693,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.1"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 39,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057603.216435,
+        "first_mutation_ts": 1776057605.2166703,
+        "delta_from_snapshot_ms": 2000.2353191375732,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.2"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057603.216435,
+        "first_mutation_ts": 1776057605.2222342,
+        "delta_from_snapshot_ms": 2005.7992935180664,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.2"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 40,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057605.2750957,
+        "first_mutation_ts": 1776057607.2751875,
+        "delta_from_snapshot_ms": 2000.091791152954,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.2"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057605.2750957,
+        "first_mutation_ts": 1776057607.280782,
+        "delta_from_snapshot_ms": 2005.6862831115723,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.2"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 41,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057607.333486,
+        "first_mutation_ts": 1776057609.3336744,
+        "delta_from_snapshot_ms": 2000.1883506774902,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.10",
+        "old_vip": "10.0.1.6"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057607.333486,
+        "first_mutation_ts": 1776057609.3392494,
+        "delta_from_snapshot_ms": 2005.763292312622,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.6"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 42,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057609.3912973,
+        "first_mutation_ts": 1776057611.3923526,
+        "delta_from_snapshot_ms": 2001.0552406311035,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.12"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057609.3912973,
+        "first_mutation_ts": 1776057611.3979485,
+        "delta_from_snapshot_ms": 2006.6511631011963,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.12"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 43,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057611.4507027,
+        "first_mutation_ts": 1776057613.45143,
+        "delta_from_snapshot_ms": 2000.7274150848389,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.13",
+        "old_vip": "10.0.1.7"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057611.4507027,
+        "first_mutation_ts": 1776057613.4569955,
+        "delta_from_snapshot_ms": 2006.2928199768066,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.7"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 44,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057613.509449,
+        "first_mutation_ts": 1776057615.5107694,
+        "delta_from_snapshot_ms": 2001.3203620910645,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.11",
+        "old_vip": "10.0.1.3"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057613.509449,
+        "first_mutation_ts": 1776057615.516347,
+        "delta_from_snapshot_ms": 2006.8979263305664,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.8",
+        "old_vip": "10.0.1.3"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 45,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057615.5687652,
+        "first_mutation_ts": 1776057617.5697966,
+        "delta_from_snapshot_ms": 2001.0313987731934,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.4"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057615.5687652,
+        "first_mutation_ts": 1776057617.5754247,
+        "delta_from_snapshot_ms": 2006.6595077514648,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.1",
+        "old_vip": "10.0.1.4"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 46,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057617.6279404,
+        "first_mutation_ts": 1776057619.6292384,
+        "delta_from_snapshot_ms": 2001.297950744629,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.5"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057617.6279404,
+        "first_mutation_ts": 1776057619.634809,
+        "delta_from_snapshot_ms": 2006.868600845337,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.5"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 47,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057619.6867702,
+        "first_mutation_ts": 1776057621.6870687,
+        "delta_from_snapshot_ms": 2000.2985000610352,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.2",
+        "old_vip": "10.0.1.3"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057619.6867702,
+        "first_mutation_ts": 1776057621.692632,
+        "delta_from_snapshot_ms": 2005.861759185791,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.7",
+        "old_vip": "10.0.1.3"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 48,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057621.7450657,
+        "first_mutation_ts": 1776057623.7464676,
+        "delta_from_snapshot_ms": 2001.4019012451172,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.4",
+        "old_vip": "10.0.1.7"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057621.7450657,
+        "first_mutation_ts": 1776057623.7520192,
+        "delta_from_snapshot_ms": 2006.953477859497,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.9",
+        "old_vip": "10.0.1.7"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    },
+    {
+      "trial": 49,
+      "clone_a": {
+        "clone_id": "A",
+        "snapshot_ts": 1776057623.8036747,
+        "first_mutation_ts": 1776057625.8050468,
+        "delta_from_snapshot_ms": 2001.3720989227295,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.3",
+        "old_vip": "10.0.1.8"
+      },
+      "clone_b": {
+        "clone_id": "B",
+        "snapshot_ts": 1776057623.8036747,
+        "first_mutation_ts": 1776057625.8106644,
+        "delta_from_snapshot_ms": 2006.9897174835205,
+        "applied_offset_ms": 0.0,
+        "new_vip": "10.0.1.6",
+        "old_vip": "10.0.1.8"
+      },
+      "timing_delta_ms": 0.0,
+      "clones_synchronised": true
+    }
+  ],
+  "timestamp": "20260413T052025Z",
+  "environment": "mininet_kali_ovs",
+  "reproducibility": {
+    "python_version": "3.13.12 (main, Feb  4 2026, 15:06:39) [GCC 15.2.0]",
+    "platform": "Linux-6.18.12+kali-amd64-x86_64-with-glibc2.42",
+    "machine": "x86_64",
+    "scipy_version": "1.16.3"
+  },
+  "verdict": "VULNERABLE"
+}

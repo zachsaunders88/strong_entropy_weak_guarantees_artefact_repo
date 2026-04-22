@@ -1,0 +1,198 @@
+{
+  "experiment": "s1_comparison",
+  "providers": {
+    "prng": {
+      "experiment": "s1_boot_entropy_starvation",
+      "provider": "prng",
+      "victim_seed": 1776055190,
+      "best_attacker_seed": 1776055190,
+      "seed_match": true,
+      "seed_window": 60,
+      "candidates_tried": 61,
+      "num_hosts": 5,
+      "num_mutation_rounds": 3,
+      "pool_cidr": "10.0.1.0/24",
+      "prediction_accuracy": 1.0,
+      "matches": 20,
+      "total_comparisons": 20,
+      "victim_assignments": [
+        {
+          "round": 0,
+          "type": "initial_assignment",
+          "assignments": {
+            "h1": "10.0.1.249",
+            "h2": "10.0.1.148",
+            "h3": "10.0.1.215",
+            "h4": "10.0.1.62",
+            "h5": "10.0.1.128"
+          }
+        },
+        {
+          "round": 1,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.211",
+            "h2": "10.0.1.84",
+            "h3": "10.0.1.49",
+            "h4": "10.0.1.204",
+            "h5": "10.0.1.220"
+          }
+        },
+        {
+          "round": 2,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.218",
+            "h2": "10.0.1.177",
+            "h3": "10.0.1.173",
+            "h4": "10.0.1.110",
+            "h5": "10.0.1.21"
+          }
+        },
+        {
+          "round": 3,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.95",
+            "h2": "10.0.1.36",
+            "h3": "10.0.1.247",
+            "h4": "10.0.1.238",
+            "h5": "10.0.1.180"
+          }
+        }
+      ],
+      "timestamp": "20260413T043950Z",
+      "environment": "mininet_kali_ovs",
+      "verdict": "VULNERABLE"
+    },
+    "csprng": {
+      "experiment": "s1_boot_entropy_starvation",
+      "provider": "csprng",
+      "victim_seed": 1776055190,
+      "best_attacker_seed": 1776055143,
+      "seed_match": false,
+      "seed_window": 60,
+      "candidates_tried": 121,
+      "num_hosts": 5,
+      "num_mutation_rounds": 3,
+      "pool_cidr": "10.0.1.0/24",
+      "prediction_accuracy": 0.05,
+      "matches": 1,
+      "total_comparisons": 20,
+      "victim_assignments": [
+        {
+          "round": 0,
+          "type": "initial_assignment",
+          "assignments": {
+            "h1": "10.0.1.78",
+            "h2": "10.0.1.141",
+            "h3": "10.0.1.27",
+            "h4": "10.0.1.198",
+            "h5": "10.0.1.76"
+          }
+        },
+        {
+          "round": 1,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.246",
+            "h2": "10.0.1.115",
+            "h3": "10.0.1.113",
+            "h4": "10.0.1.35",
+            "h5": "10.0.1.118"
+          }
+        },
+        {
+          "round": 2,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.126",
+            "h2": "10.0.1.194",
+            "h3": "10.0.1.143",
+            "h4": "10.0.1.114",
+            "h5": "10.0.1.86"
+          }
+        },
+        {
+          "round": 3,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.78",
+            "h2": "10.0.1.228",
+            "h3": "10.0.1.160",
+            "h4": "10.0.1.247",
+            "h5": "10.0.1.40"
+          }
+        }
+      ],
+      "timestamp": "20260413T043950Z",
+      "environment": "mininet_kali_ovs",
+      "verdict": "MITIGATED"
+    },
+    "dead": {
+      "experiment": "s1_boot_entropy_starvation",
+      "provider": "dead",
+      "victim_seed": 1776055190,
+      "best_attacker_seed": 1776055175,
+      "seed_match": false,
+      "seed_window": 60,
+      "candidates_tried": 121,
+      "num_hosts": 5,
+      "num_mutation_rounds": 3,
+      "pool_cidr": "10.0.1.0/24",
+      "prediction_accuracy": 0.1,
+      "matches": 2,
+      "total_comparisons": 20,
+      "victim_assignments": [
+        {
+          "round": 0,
+          "type": "initial_assignment",
+          "assignments": {
+            "h1": "10.0.1.99",
+            "h2": "10.0.1.104",
+            "h3": "10.0.1.167",
+            "h4": "10.0.1.227",
+            "h5": "10.0.1.143"
+          }
+        },
+        {
+          "round": 1,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.234",
+            "h2": "10.0.1.68",
+            "h3": "10.0.1.110",
+            "h4": "10.0.1.92",
+            "h5": "10.0.1.30"
+          }
+        },
+        {
+          "round": 2,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.171",
+            "h2": "10.0.1.232",
+            "h3": "10.0.1.134",
+            "h4": "10.0.1.190",
+            "h5": "10.0.1.136"
+          }
+        },
+        {
+          "round": 3,
+          "type": "mutation",
+          "assignments": {
+            "h1": "10.0.1.245",
+            "h2": "10.0.1.129",
+            "h3": "10.0.1.249",
+            "h4": "10.0.1.211",
+            "h5": "10.0.1.55"
+          }
+        }
+      ],
+      "timestamp": "20260413T043950Z",
+      "environment": "mininet_kali_ovs",
+      "verdict": "MITIGATED"
+    }
+  },
+  "timestamp": "20260413T043951Z"
+}
