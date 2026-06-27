@@ -88,7 +88,7 @@ def run_advanced_s2():
     # This forces collisions and makes the 'Randomness' less effective at isolating replicas.
     pool_cidr = "10.0.1.0/28"
     num_replicas = 5
-    num_steps = 500  # Increased from 20 to 500 for RAID 2026 submission
+    num_steps = 500  # Increased from 20 to 500 for the ESORICS 2026 evaluation
 
     logger.info(f"Configuration: Pool={pool_cidr}, Replicas={num_replicas}, Steps={num_steps}")
     logger.info("Entropy Source: SecretsProvider (CSPRNG)")

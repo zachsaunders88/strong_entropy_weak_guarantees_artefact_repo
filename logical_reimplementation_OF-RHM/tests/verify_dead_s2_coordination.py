@@ -33,7 +33,7 @@ def test_dead_s2_coordination():
         
         pool_cidr = "10.0.1.0/28" # 14 usable
         num_replicas = 5
-        num_steps = 500  # Increased from 20 to 500 for RAID 2026 submission
+        num_steps = 500  # Increased from 20 to 500 for the ESORICS 2026 evaluation
         scope = "test-scope-s2"
         
         logger.info(f"Config: Pool={pool_cidr}, Replicas={num_replicas}, Scope={scope}")

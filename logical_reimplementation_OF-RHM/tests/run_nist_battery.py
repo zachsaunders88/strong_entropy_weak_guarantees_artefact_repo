@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from nistrng import SP800_22R1A_BATTERY, check_eligibility_all_battery, run_all_battery, pack_sequence
 
 OUTDIR         = "batter_eval_out"
-BITS_PER_TRIAL = 100_000        # 12,500 bytes per trial
+BITS_PER_TRIAL = 1_000_000      # 125,000 bytes per trial (1 Mbit)
 BYTES_PER_TRIAL = BITS_PER_TRIAL // 8
 N_TRIALS       = 20
 ALPHA          = 0.05

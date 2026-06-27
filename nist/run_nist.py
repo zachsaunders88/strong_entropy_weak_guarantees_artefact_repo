@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduces Table 5: NIST SP 800-22 Rev 1a entropy quality evaluation.
+"""Reproduces the EMN statistical-quality results (Section 5.3 / Appendix A).
 
 Runs the NIST SP 800-22 Rev 1a battery (via `nistrng`) on byte streams from:
   1) os.urandom
@@ -40,7 +40,7 @@ from controller.dead.emn import EntropyMixingNetwork
 @dataclass
 class Config:
     trials: int = 20
-    bytes_per_trial: int = 65_536
+    bytes_per_trial: int = 125_000  # 1 Mbit per trial (NIST SP 800-22 minimum)
     alpha: float = 0.05
 
 

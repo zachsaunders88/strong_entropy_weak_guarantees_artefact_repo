@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Reproduces Table 4 S4c row: clone deadline divergence experiment.
+"""Reproduces Table 3 S4c row: clone deadline divergence experiment.
 
 Runs the 200-trial S4c schedule-divergence experiment in the logical
 reimplementation and prints summary statistics.

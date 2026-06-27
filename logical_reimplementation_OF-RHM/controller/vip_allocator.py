@@ -167,38 +167,12 @@ class VIPPool:
         self.history_by_host: Dict[str, List[Tuple[str, float]]] = {}
 
     def assign_initial_vip(self, host: HostRecord) -> str:
-        """Assigns a vIP to a host for the first time.
-
-        If coordination_scope and replica_id are configured (DEAD v1.1), the same
-        coordinated permutation logic used by choose_new_vip() is applied here as
-        well to avoid cross-replica collisions during initial assignment.
-        """
+        """Assigns a random vIP to a host for the first time."""
         candidates = [vip for vip in self.available_vips if vip not in self.in_use_map]
-
+        
         if not candidates:
             raise RuntimeError("No available vIPs in the pool")
-
-        # Coordinated Permutation Logic (Fixes S2)
-        if self.coordination_scope and self.replica_id and hasattr(self.entropy_provider, "get_epoch_key"):
-            try:
-                epoch_key = self.entropy_provider.get_epoch_key(self.coordination_scope)
-                r_perm = random.Random(epoch_key)
-
-                candidates = sorted(candidates)
-                r_perm.shuffle(candidates)
-
-                try:
-                    slot_idx = int(self.replica_id) % len(candidates)
-                except (ValueError, TypeError):
-                    slot_idx = hash(self.replica_id) % len(candidates)
-
-                vip = candidates[slot_idx]
-                self._allocate_vip(host, vip)
-                return vip
-
-            except Exception as e:
-                print(f"Coordination Failed: {e}")
-
+            
         vip = self.entropy_provider.choice(candidates, context=host.host_id)
         self._allocate_vip(host, vip)
         return vip
@@ -263,9 +237,10 @@ class VIPPool:
                 return vip
                 
             except Exception as e:
-                # Fallback to standard flow
-                print(f"Coordination Failed: {e}")
-                pass
+                # Fail-loud: a coordination failure must abort the allocation
+                # rather than revert to an uncoordinated draw, which would
+                # silently reintroduce S2 Birthday collisions.
+                raise RuntimeError(f"Epoch-key coordination failed: {e}") from e
 
         vip = self.entropy_provider.choice(candidates, context=host.host_id)
         self._allocate_vip(host, vip)

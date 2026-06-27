@@ -17,17 +17,24 @@ pip install -r requirements.txt
 python eval/s2_collision.py
 ```
 
-## Reproducing Table 4 S4c row (clone deadline divergence)
+## Reproducing Table 3 S4c row (clone deadline divergence)
 
 ```bash
 python eval/s4c_deadline.py
 ```
 
-## Reproducing Table 5 (NIST SP 800-22 entropy quality)
+## Reproducing the EMN statistical-quality results (Section 5.3 / Appendix A)
 
 ```bash
 python nist/run_nist.py
 ```
+
+## Network-level validation (Mininet/OVS/os-ken)
+
+The full per-mode comparison of logical findings against the network layer is in
+[`concrete_reimplementation_OF-RHM/results/network_validation_comparison.md`](concrete_reimplementation_OF-RHM/results/network_validation_comparison.md).
+Driver scripts are under `concrete_reimplementation_OF-RHM/experiments/` and raw results
+under `concrete_reimplementation_OF-RHM/results/`.
 
 ## DEAD daemon
 

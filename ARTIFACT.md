@@ -19,6 +19,7 @@ Run from `concrete_reimplementation_OF-RHM/`:
 - S2: `make run-s2`
 - S3 (Mininet timing): `make run-s3-all`
 - S4c: `make run-s4c`
+- Network-validation summary (all modes vs. logical findings): `results/network_validation_comparison.md`
 
 Notes:
 - Concrete experiments require Linux + Mininet/OVS (some targets require `sudo`).

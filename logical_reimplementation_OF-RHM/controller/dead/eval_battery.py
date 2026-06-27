@@ -21,7 +21,7 @@ from .reseeder import Reseeder
 # ------ Parameters ------ 
 SAMPLES = int(5e6) # Original was 1e6
 BYTE_CHUNK = 32
-TRIALS = 20  # Increased from 1 to 20 for RAID 2026 submission
+TRIALS = 20  # Increased from 1 to 20 for the ESORICS 2026 evaluation
 NLAGS = 1000
 NPERSEG = 4096
 OUTDIR = "batter_eval_out"
